@@ -1,13 +1,17 @@
 {
-    "build": {
-      "env": {
-        "COMPOSER_ALLOW_SUPERUSER": "1",
-        "COMPOSER_HOME": "/tmp/composer"
+    "builds": [
+      {
+        "src": "resources/js/app.js",
+        "use": "@vercel/node"
       },
-      "commands": {
-        "install": "composer install --no-dev --optimize-autoloader",
-        "build": "npm run build"
+      {
+        "src": "composer.json",
+        "use": "@vercel/php"
       }
+    ],
+    "env": {
+      "COMPOSER_ALLOW_SUPERUSER": "1",
+      "COMPOSER_HOME": "/tmp/composer"
     }
   }
   
