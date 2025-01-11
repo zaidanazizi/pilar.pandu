@@ -1,17 +1,16 @@
 {
     "builds": [
-      {
-        "src": "resources/js/app.js",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "composer.json",
-        "use": "@vercel/php"
-      }
+        {
+            "src": "resources/js/app.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "index.php",
+            "use": "@vercel/php"
+        }
     ],
     "env": {
-      "COMPOSER_ALLOW_SUPERUSER": "1",
-      "COMPOSER_HOME": "/tmp/composer"
+        "COMPOSER_ALLOW_SUPERUSER": "1",
+        "COMPOSER_HOME": "/tmp/composer"
     }
-  }
-  
+}
