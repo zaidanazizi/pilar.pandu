@@ -1,59 +1,29 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+import defaultTheme from "tailwindcss/defaultTheme";
+import forms from "@tailwindcss/forms";
+import typography from "@tailwindcss/typography";
 
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
     content: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-        './storage/framework/views/*.php',
-        './resources/views/**/*.blade.php',
-        './resources/js/**/*.vue',
+        "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
+        "./storage/framework/views/*.php",
+        './index.html',
+        './src/**/*.{vue,js,ts,jsx,tsx}',
+        "./resources/views/**/*.blade.php",
+        "./resources/js/**/*.vue",
+        "./resources/**/*.{html,js,vue}",
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
     ],
+
     theme: {
         extend: {
-            colors: {
-                blue: {
-                    800: '#1e3a8a',
-                    400: '#60a5fa',
-                },
-            },
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
             },
         },
     },
-    variants: {
-        extend: {
-            before: ['responsive', 'hover', 'focus'],
-            after: ['responsive', 'hover', 'focus'],
-        },
-    },
-    plugins: [
-        require('@tailwindcss/forms'),
-        require('@tailwindcss/typography'),
-        function ({ addUtilities }) {
-            addUtilities({
-                '.gradien-container::before': {
-                    content: '""',
-                    position: 'absolute',
-                    top: '0',
-                    left: '0',
-                    height: '100%',
-                    width: '60px', /* Pastikan gradien proper di tepi */
-                    background: 'linear-gradient(to right, white, transparent)',
-                    zIndex: '10',
-                    pointerEvents: 'none',
-                },
-                '.gradien-container::after': {
-                    content: '""',
-                    position: 'absolute',
-                    top: '0',
-                    right: '0',
-                    height: '100%',
-                    width: '60px', /* Pastikan gradien proper di tepi */
-                    background: 'linear-gradient(to left, white, transparent)',
-                    zIndex: '10',
-                    pointerEvents: 'none',
-                },
-            });
-        },
-    ],
+
+    plugins: [forms],
 };

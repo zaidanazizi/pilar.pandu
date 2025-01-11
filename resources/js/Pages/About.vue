@@ -11,7 +11,7 @@
                 <div class="mx-auto max-w-2xl lg:mx-0">
                     <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">About Us</h1>
                     <p class="mt-6 text-lg leading-8 text-gray-300">
-                        Your trusted partner in heavy equipment solutions since [Year]. We're committed to providing
+                        Your trusted partner in heavy equipment solutions since 2024. We're committed to providing
                         quality machinery and exceptional service to support your business growth.
                     </p>
                 </div>
@@ -27,7 +27,7 @@
                             <h2 class="text-base font-semibold leading-7 text-indigo-600">Our History</h2>
                             <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A Legacy of Excellence</p>
                             <p class="mt-6 text-lg leading-8 text-gray-600">
-                                Founded in [Year], we've grown from a small equipment provider to one of the leading
+                                Founded in 2024, we've grown from a small equipment provider to one of the leading
                                 heavy machinery suppliers in the region. Our journey is marked by continuous innovation
                                 and unwavering commitment to customer satisfaction.
                             </p>
@@ -42,7 +42,7 @@
                     <img
                         src="/images/about us history.jpg"
                         alt="Company History"
-                        class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                        class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[40rem] md:-ml-4 lg:-ml-0"
                     />
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                         <!-- Vision -->
                         <div class="flex flex-col">
-                            <dt class="flex items-center gap-x-3 text-xl font-semibold leading-7 text-gray-900">
+                            <dt class="flex items-center gap-x-3 text-xl font-semibold leading-7 text-gray-900 ">
                                 <EyeIcon class="h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                                 Our Vision
                             </dt>
