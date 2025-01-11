@@ -17,4 +17,9 @@ export default defineConfig({
             },
         }),
     ],
+    resolve: {
+        alias: {
+            ziggy: '/vendor/tightenco/ziggy/dist', // Sesuaikan dengan path Anda
+        },
+      },
 });

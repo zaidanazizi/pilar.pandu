@@ -2,7 +2,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
+        "build": "composer install && php artisan ziggy:generate && vite build",
         "dev": "concurrently \"vite\" \"php artisan serve\""
     },
     "devDependencies": {

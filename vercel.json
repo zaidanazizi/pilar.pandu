@@ -1,0 +1,13 @@
+{
+    "build": {
+      "env": {
+        "COMPOSER_ALLOW_SUPERUSER": "1",
+        "COMPOSER_HOME": "/tmp/composer"
+      },
+      "commands": {
+        "install": "composer install --no-dev --optimize-autoloader",
+        "build": "npm run build"
+      }
+    }
+  }
+  
